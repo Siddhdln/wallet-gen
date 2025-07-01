@@ -1,7 +1,8 @@
 {
   "name": "Wallet Gen Codespace",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {},
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
@@ -13,6 +14,6 @@
       ]
     }
   },
-  "postCreateCommand": "echo 'Container setup complete!'",
+  "postCreateCommand": "echo 'Container ready!'",
   "remoteUser": "vscode"
 }
